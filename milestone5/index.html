@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ediable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shareable Resume Builder </h1>
+    <form id="Resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">UserName</label>
+            <input type="text" id="username" placeholder="Enter Your UserName" required>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter Your Email" required>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="Enter Your Number " required>
+
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education</label>
+            <textarea id="education" placeholder="Enter Your Education" rows="4" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience</label>
+            <textarea id="experience" placeholder="Enter Your Experience" rows="4" required></textarea>
+        </fieldset>
+        <fieldset> 
+            
+                <legend>Skills</legend>
+                <label for="skills">Skills</label>
+                <textarea id="skills" placeholder="Enter Your skills" rows="4" required></textarea>
+            
+        </fieldset>
+        <button type="submit">Generate Your Resume</button>
+    </form>
+    <br>
+    <div id="resume-display" contenteditable="true"></div>
+    <br>
+    <div class="shareable-link-container">
+        <h2>Shareable Link</h2>
+        <p>Here Your Link To View Or Edit Your Resume</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <button id="download-button">Download Your Resume PDF</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
